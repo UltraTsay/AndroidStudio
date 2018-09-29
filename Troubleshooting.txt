@@ -1,0 +1,57 @@
+﻿1.
+Could not find com.android.tools.lint:lint-gradle: ...
+
+Add the code following at the top-level of build.gradle.
+allprojects {
+    repositories {
+        // The order in which you list these repositories matter.
+        google()
+        jcenter()
+    }
+}
+
+
+
+2.
+Installation failed with message Failed to install all .
+It is possible that this issue is resolved by uninstalling an existing version of the apk if it is present, and then re-installing.
+
+To unable the function "Instant run".
+
+
+
+3.
+Installation failed with message INSTALL_PARSE_FAILED_MANIFEST_MALFORMED.
+It is possible that this issue is resolved by uninstalling an existing version of the apk if it is present, and then re-installing.
+WARNING: Uninstalling will remove the application data!
+Do you want to uninstall the existing application?
+
+Name of package should be "lower case".
+
+
+
+4.
+error: package R does not exist
+
+Close project
+Open project
+Refactor rename the package
+
+
+
+5.
+Failed to load AppCompat ActionBar with unknown error
+
+Changing Theme.AppCompat.Light.DarkActionBar to Base.Theme.AppCompat.Light.DarkActionBar in styles.xml.﻿
+
+
+
+6.
+All flavors must now belong to a named flavor dimension.
+
+android{
+	compileSdkVersion 25
+	buildToolsVersion'27.0.3'
+	…
+	flavorDimensions "default"
+}
